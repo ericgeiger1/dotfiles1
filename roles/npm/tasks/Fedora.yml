@@ -67,6 +67,7 @@
         npm install -g npm@latest
       args:
         executable: /bin/bash
+      ignore_errors: true
       when: 
         - npm_update_npm
         - nvm_node_check.stdout != 'not-installed'

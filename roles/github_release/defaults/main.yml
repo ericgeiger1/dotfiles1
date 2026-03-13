@@ -14,7 +14,7 @@ github_release_version_pattern: "[0-9]+\\.[0-9]+\\.[0-9]+"  # Regex to extract v
 github_release_force_install: false  # Force reinstall even if already installed
 
 # Asset selection
-github_release_asset_name_pattern: ""  # If empty, will auto-detect based on OS/arch
+github_release_asset_name_pattern: "gh_*amd64.tar.gz"  # If empty, will auto-detect based on OS/arch
 github_release_asset_type: "auto"  # Options: auto, tar.gz, zip, deb, rpm, binary, AppImage
 
 # Platform detection (automatically set, can be overridden)

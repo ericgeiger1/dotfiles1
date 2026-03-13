@@ -38,7 +38,7 @@
       - dnf-plugins-core
       - util-linux  # For various system utilities
       - cronie  # Cron daemon
-      - mlocate  # For updatedb command
+      - plocate  # For updatedb command
     state: present
   become: true
   when: can_install_packages | default(false)
